@@ -31,4 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
 });
+/* menu */
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
 

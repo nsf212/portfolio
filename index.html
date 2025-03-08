@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Benali Insaf</header>
+    <header>
+        <nav>
+            <h1 class="logo">Insaf Benali</h1>
+            <div class="onglets" id="menu">
+                <a href="#about">Qui suis-je ? </a>
+                <a href="#timeline">Parcours</a>
+                <a href="#Projects">Mes projets</a>
+                <a href="#Skills">Mes compétences</a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>  
+    </header>
     
-    <section class="about reveal">
+    <section class="about reveal" id = "about">
         <div class="about-container">
             <img src="images/moi.jpg" alt="Photo de Insaf" class="profile-img">
             <div class="about-text">
@@ -20,7 +31,7 @@
         </div>
     </section>
     
-    <section class="timeline reveal">
+    <section class="timeline reveal" id="timeline">
         <h2>Mon parcours académique</h2>
         <div class="timeline-container">
             <div class="timeline-item">
@@ -56,7 +67,7 @@
         </div>
     </section>
     
-    <section class="projects reveal">
+    <section class="projects reveal" id="Projects">
         <h1>Mes Projets</h1>
         <h2>Mes projets informatiques</h2>
         <div class="projects-container">
@@ -117,7 +128,7 @@
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="Skills">
         <h2>Mes Compétences</h2>
         <h3>Programmation</h3>
         <ul>
@@ -142,8 +153,8 @@
         <ul>
             <li>Email : <a href="mailto:insafbenali240@gmail.com">insafbenali240@gmail.com</a></li>
             <li>LinkedIn : <a href="https://www.linkedin.com/in/insaf-benali-042b09331/" target="_blank">Mon profil</a></li>
-            <!--<li>GitHub : <a href="https://github.com/ton_utilisateur" target="_blank">Mon GitHub</a></li>-->
-            <li>CV: <a href="project-image/Curriculum_Vitae_Benali_Insaf[1].pdf">Mon CV</a></li> 
+            <li>GitHub : <a href="https://github.com/nsf212" target="_blank">Mon GitHub</a></li>
+            <li>CV: <a href="project-image/Curriculum_Vitae_Benali_Insaf_ecole.pdf">Mon CV</a></li> 
         </ul>
         <p>&copy; 2024 Insaf Benali | Tous droits réservés</p>
     </footer>
@@ -151,4 +162,4 @@
     <button id="scrollToTop">↑</button>
     <script src="script.js"></script>
 </body>
-</html>
+</htm

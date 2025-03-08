@@ -12,16 +12,86 @@ body {
 }
 
 /* En-tête */
+/* Style général du header */
 header {
     background-color: #463840;
     color: #ffffff;
-    font-family: 'Playfair Display', serif; /* Police élégante et féminine */
-    font-size: 2.5rem; /* Texte plus grand */
-    font-weight: bold;
-    padding: 2rem; /* Plus haut pour un effet plus aéré */
+    font-family: 'Playfair Display', serif;
+    padding: 1.5rem 2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Onglets de navigation */
+.onglets {
+    display: flex;
+    gap: 2rem;
+}
+
+.onglets a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.onglets a:hover {
+    color: #f4b860;
+}
+
+/* Menu hamburger */
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Caché sur desktop */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .onglets {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #463840;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .onglets a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    
+    .onglets.active {
+        display: flex;
+    }
 }
 
 /* Sections générales */
